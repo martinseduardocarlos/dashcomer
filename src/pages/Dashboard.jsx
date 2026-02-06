@@ -1,5 +1,8 @@
 import StatCard from "../components/StatCard"
 import TableStatus from "../components/TableStatus"
+import SalesChart from "../components/Charts/SalesChart"
+import OrdersChart from "../components/Charts/OrdersChart"
+
 
 export default function Dashboard() {
   return (
@@ -17,6 +20,11 @@ export default function Dashboard() {
           <StatCard title="Mesas Livres" value="8" />
         </div>
       </div>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+  <SalesChart />
+  <OrdersChart />
+</div>
+
 
       <div className="section">
         <h2 className="section-title">Mesas</h2>
