@@ -1,8 +1,8 @@
 export default function StatCard({ title, value }) {
   return (
-    <div className="bg-white shadow rounded-xl p-4">
-      <p className="text-gray-500">{title}</p>
-      <h2 className="text-2xl font-bold">{value}</h2>
+    <div className="card">
+      <p className="card-title">{title}</p>
+      <p className="card-value">{value}</p>
     </div>
   )
 }
